@@ -36,9 +36,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     'ip_tracking',
+    'django_ratelimit',
 ]
 
-
+       
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -100,3 +101,6 @@ USE_I18N = True
 USE_TZ = True
 STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+RATELIMIT_USE_CACHE = 'default'
