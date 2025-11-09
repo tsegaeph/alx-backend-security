@@ -5,7 +5,7 @@ import ipinfo
 from django.core.cache import cache
 
 logger = logging.getLogger(__name__)
-ACCESS_TOKEN = 'YOUR_IPINFO_TOKEN'  # Replace with your IPInfo token
+ACCESS_TOKEN = '36fd9b934636e8'
 handler = ipinfo.getHandler(ACCESS_TOKEN)
 
 class IPLoggingMiddleware:
